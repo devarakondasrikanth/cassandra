@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.srikanth.spring.boot.cassandra.repository.RecordRepositoryIntegrationTest" time="6.679" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_72\jre\bin"/>
+    <property name="java.vm.version" value="25.72-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\D123577\workspace\cassandra"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\D123577\workspace\cassandra"/>
+    <property name="java.runtime.version" value="1.8.0_72-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\D123577\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Tools\apache-maven-3.3.9\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_72\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;c:\progra~1\oracle\product\12.1.0\client\bin;C:\Program Files\HPE_Security\Fortify_SCA_and_Apps_16.20\bin;C:\Program Files\Java\jdk1.8.0_72\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WebEx\Productivity Tools;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Tools\curl-7.46.0-win64\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Tools\apache-maven-3.3.9\bin;C:\Program Files (x86)\PFG Common Files\Dependent DLLs\;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\nodejs\;C:\ProgramData\Oracle\Java\javapath;C:\Users\D123577\AppData\Local\Microsoft\WindowsApps;C:\Users\D123577\AppData\Roaming\npm;C:\gradle-4.1\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\D123577"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="D123577"/>
+    <property name="java.class.path" value="C:\Tools\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_72\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -X -U install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_72"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_72\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_72\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_72\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Tools\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.srikanth.spring.boot.cassandra.repository.RecordRepositoryIntegrationTest" name="com.srikanth.spring.boot.cassandra.repository.RecordRepositoryIntegrationTest" time="6.679">
+    <error message="org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder.&lt;init&gt;(IIIIIZ)V" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder.&lt;init&gt;(IIIIIZ)V
+	at com.datastax.driver.core.Frame$DecoderV1.&lt;init&gt;(Frame.java:179)
+	at com.datastax.driver.core.Frame$Decoder.&lt;clinit&gt;(Frame.java:162)
+	at com.datastax.driver.core.Connection$PipelineFactory.getPipeline(Connection.java:1029)
+	at org.jboss.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:212)
+	at org.jboss.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:188)
+	at com.datastax.driver.core.Connection.&lt;init&gt;(Connection.java:99)
+	at com.datastax.driver.core.Connection$Factory.open(Connection.java:573)
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:244)
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:190)
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78)
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1230)
+	at com.datastax.driver.core.Cluster.init(Cluster.java:157)
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:245)
+	at com.srikanth.spring.boot.cassandra.repository.RecordRepositoryIntegrationTest.startCassandraEmbedded(RecordRepositoryIntegrationTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+</testsuite>
